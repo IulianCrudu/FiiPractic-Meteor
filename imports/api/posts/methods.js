@@ -3,7 +3,7 @@ import {Posts} from '/db';
 
 Meteor.methods({
     'post.create'(post) {
-        Posts.insert(post);
+        return Posts.insert(post);
     },
 
     'post.list' () {
